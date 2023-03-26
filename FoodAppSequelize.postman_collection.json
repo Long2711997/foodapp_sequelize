@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "3d1b06c9-7971-459f-81e0-d4bd7fd766fc",
+		"name": "FoodAppSequelize",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 4,\r\n    \"res_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/res/like-res",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"res",
+						"like-res"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Like By Res",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/res/get-like-by-res/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"res",
+						"get-like-by-res",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unlike Res",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/res/unlike-res/4/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"res",
+						"unlike-res",
+						"4",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Like By User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/res/get-like-by-user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"res",
+						"get-like-by-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rate Res",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 6,\r\n    \"res_id\": 1,\r\n    \"amount\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/res/rate-res",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"res",
+						"rate-res"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rate By Res",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/res/get-rate-by-res/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"res",
+						"get-rate-by-res",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rate By User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/res/get-rate-by-user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"res",
+						"get-rate-by-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 1,\r\n    \"food_id\": 5,\r\n    \"amount\": 1,\r\n    \"arr_sub_id\": \"[4, 5]\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/order/create-order",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"create-order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
